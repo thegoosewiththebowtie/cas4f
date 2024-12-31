@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PaymentForm</class>
+ <widget class="QWidget" name="PaymentForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Garamond</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="toolTip">
+   <string>*the only currency in existence</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="2,5,1,1,1" columnstretch="2,6,1,1,1,1,0">
+   <property name="sizeConstraint">
+    <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+   </property>
+   <item row="3" column="1">
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="inputMask">
+      <string comment="0000000000000000000001" extracomment="0000000000000000000001"/>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="toolTip">
+      <string>Triangle on The Wall organization issued membership card ID</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::WinPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;ToTW MC ID: q0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="7">
+    <widget class="QLabel" name="label">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::WinPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Sunken</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="res.qrc">:/res/img/res/longlogo.png</pixmap>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2" colspan="5">
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,1">
+     <item>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="layoutDirection">
+        <enum>Qt::LayoutDirection::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>In</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="text">
+        <string>Out</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0" colspan="7" alignment="Qt::AlignmentFlag::AlignBottom">
+    <widget class="QLabel" name="label_3">
+     <property name="toolTip">
+      <string>*the only currency in existence</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;We accept:&lt;br/&gt;Triangle on The Wall organization &lt;/span&gt;▲&lt;span style=&quot; font-size:14pt;&quot;&gt;Membership Card Bonus Points*&lt;br/&gt;We dont accept anything else for the reason of our monopoly. Sorry for the inconvenience.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2" colspan="5">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="frameShape">
+        <enum>QFrame::Shape::WinPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <property name="text">
+        <string>Amount:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <family>Garamond</family>
+         <pointsize>12</pointsize>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="prefix">
+        <string>▲</string>
+       </property>
+       <property name="maximum">
+        <number>99999999</number>
+       </property>
+       <property name="stepType">
+        <enum>QAbstractSpinBox::StepType::AdaptiveDecimalStepType</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="inputMask">
+      <string comment="0000000000000000000001" extracomment="0000000000000000000001"/>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="toolTip">
+      <string>Triangle on The Wall organization issued membership card ID</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::WinPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;ToTW MC SCv2: qX&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2" colspan="5">
+    <widget class="QCommandLinkButton" name="commandLinkButton">
+     <property name="layoutDirection">
+      <enum>Qt::LayoutDirection::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Proceed</string>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QProgressBar" name="progressBar">
+     <property name="maximum">
+      <number>0</number>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
