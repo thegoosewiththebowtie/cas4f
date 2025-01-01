@@ -338,7 +338,7 @@ void Slots::on_Take_clicked()
 }
 
 
-void Slots::on_Keep1_checkStateChanged(const Qt::CheckState &arg1)
+void Slots::on_Keep1_toggled(bool checked)
 {
     if (ui->Keep1->isChecked()||ui->Keep2->isChecked()||ui->Keep3->isChecked()){
         ui->Amount->setEnabled(false);
@@ -357,14 +357,17 @@ void Slots::on_Keep1_checkStateChanged(const Qt::CheckState &arg1)
 }
 
 
-void Slots::on_Keep3_checkStateChanged(const Qt::CheckState &arg1)
+void Slots::on_Keep3_toggled(bool checked)
 {
-    on_Keep1_checkStateChanged(arg1);
+    on_Keep1_toggled(checked);
 }
 
 
-void Slots::on_Keep2_checkStateChanged(const Qt::CheckState &arg1)
+void Slots::on_Keep2_toggled(bool checked)
 {
-    on_Keep1_checkStateChanged(arg1);
+    on_Keep1_toggled(checked);
 }
+
+
+
 

@@ -50,11 +50,11 @@ private slots:
 
     void on_Take_clicked();
 
-    void on_Keep1_checkStateChanged(const Qt::CheckState &arg1);
+    void on_Keep1_toggled(bool checked);
 
-    void on_Keep3_checkStateChanged(const Qt::CheckState &arg1);
+    void on_Keep3_toggled(bool checked);
 
-    void on_Keep2_checkStateChanged(const Qt::CheckState &arg1);
+    void on_Keep2_toggled(bool checked);
 
 private:
     Ui::Slots *ui;

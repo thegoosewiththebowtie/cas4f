@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
         settings.setValue("Balance", 0);
     }
     a.setStyle(QStyleFactory::create("WindowsVista"));
+    QFontDatabase qfd;
     QFontDatabase::addApplicationFont("qrc:/res/fnt/DSEG14Classic-Regular.ttf");
     MainWindow w;
     w.show();

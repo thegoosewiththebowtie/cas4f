@@ -3771,53 +3771,14 @@
       </widget>
      </item>
      <item row="1" column="1" colspan="9">
-      <layout class="QGridLayout" name="subGrid" rowstretch="1,10,1" columnstretch="1,2,1">
-       <item row="2" column="1">
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Orientation::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
+      <layout class="QGridLayout" name="subGrid" rowstretch="1,5,1" columnstretch="1,3,1">
        <item row="1" column="2">
         <spacer name="horizontalSpacer">
          <property name="orientation">
           <enum>Qt::Orientation::Horizontal</enum>
          </property>
          <property name="sizeType">
-          <enum>QSizePolicy::Policy::MinimumExpanding</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="0">
-        <spacer name="horizontalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Orientation::Horizontal</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>0</width>
-           <height>0</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="1">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Orientation::Vertical</enum>
+          <enum>QSizePolicy::Policy::Preferred</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -3829,6 +3790,9 @@
        </item>
        <item row="1" column="1">
         <layout class="QGridLayout" name="guideGrid" rowstretch="0,0,0,0,0,0,0,0,0,0" columnstretch="0,0,0,0,0,0,0">
+         <property name="sizeConstraint">
+          <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+         </property>
          <item row="1" column="1">
           <widget class="QLabel" name="lbl6_2">
            <property name="minimumSize">
@@ -3910,7 +3874,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4011,7 +3975,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4112,7 +4076,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4213,7 +4177,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4314,7 +4278,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4415,7 +4379,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4516,7 +4480,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4617,7 +4581,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4718,7 +4682,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4819,7 +4783,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4843,8 +4807,8 @@
           <widget class="QLabel" name="lbl30_2">
            <property name="minimumSize">
             <size>
-             <width>50</width>
-             <height>25</height>
+             <width>0</width>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
@@ -4920,7 +4884,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -4939,150 +4903,6 @@
             <set>Qt::AlignmentFlag::AlignCenter</set>
            </property>
           </widget>
-         </item>
-         <item row="4" column="3" rowspan="6">
-          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0">
-           <property name="sizeConstraint">
-            <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
-           </property>
-           <item>
-            <spacer name="verticalSpacer">
-             <property name="orientation">
-              <enum>Qt::Orientation::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_13">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Serie 5/8 </string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_15">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Orphelins</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_14">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Serie 0/2/3</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="pushButton_16">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Zero spiel </string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
          </item>
          <item row="1" column="4">
           <widget class="QLabel" name="lbl3_2">
@@ -5165,7 +4985,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5266,7 +5086,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5367,7 +5187,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5468,7 +5288,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5572,7 +5392,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5673,7 +5493,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5774,7 +5594,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5875,7 +5695,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -5897,6 +5717,12 @@
          </item>
          <item row="9" column="4" colspan="3">
           <widget class="QPushButton" name="pushButton_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -5912,7 +5738,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -5928,6 +5754,12 @@
          </item>
          <item row="8" column="0" colspan="3">
           <widget class="QPushButton" name="pushButton_7">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -5943,7 +5775,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -6038,7 +5870,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6060,6 +5892,12 @@
          </item>
          <item row="5" column="0" colspan="3">
           <widget class="QPushButton" name="pushButton_4">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -6075,7 +5913,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -6091,6 +5929,12 @@
          </item>
          <item row="9" column="1">
           <widget class="QPushButton" name="pushButton_0">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -6106,7 +5950,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -6201,7 +6045,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6302,7 +6146,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6403,7 +6247,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6504,7 +6348,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6605,7 +6449,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6706,7 +6550,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6807,7 +6651,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -6829,6 +6673,12 @@
          </item>
          <item row="9" column="2">
           <widget class="QPushButton" name="pushButton_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -6844,7 +6694,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -6939,7 +6789,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7040,7 +6890,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7141,7 +6991,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7242,7 +7092,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7264,6 +7114,12 @@
          </item>
          <item row="8" column="4" colspan="3">
           <widget class="QPushButton" name="pushButton_6">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -7279,7 +7135,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -7380,7 +7236,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7481,7 +7337,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7582,7 +7438,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7683,7 +7539,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7784,7 +7640,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7885,7 +7741,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -7986,7 +7842,7 @@
            <property name="font">
             <font>
              <family>DSEG14 Classic</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="autoFillBackground">
@@ -8008,6 +7864,12 @@
          </item>
          <item row="3" column="4" colspan="3">
           <widget class="QPushButton" name="pushButton_5">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
              <width>0</width>
@@ -8023,7 +7885,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -8039,9 +7901,15 @@
          </item>
          <item row="9" column="0">
           <widget class="QPushButton" name="pushButton_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
-             <width>50</width>
+             <width>0</width>
              <height>0</height>
             </size>
            </property>
@@ -8054,7 +7922,7 @@
            <property name="font">
             <font>
              <family>Garamond</family>
-             <pointsize>10</pointsize>
+             <pointsize>14</pointsize>
             </font>
            </property>
            <property name="text">
@@ -8069,105 +7937,18 @@
           </widget>
          </item>
          <item row="0" column="3" rowspan="4">
-          <layout class="QGridLayout" name="gridLayout_4">
-           <item row="4" column="0">
-            <widget class="QPushButton" name="pushButton_12">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Odd</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QPushButton" name="pushButton_11">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Black</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QPushButton" name="pushButton_10">
-             <property name="minimumSize">
-              <size>
-               <width>50</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>16777215</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Garamond</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Red</string>
-             </property>
-             <property name="checkable">
-              <bool>true</bool>
-             </property>
-             <property name="autoExclusive">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
             <widget class="QPushButton" name="pushButton_9">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
-               <width>50</width>
+               <width>0</width>
                <height>0</height>
               </size>
              </property>
@@ -8180,7 +7961,7 @@
              <property name="font">
               <font>
                <family>Garamond</family>
-               <pointsize>10</pointsize>
+               <pointsize>14</pointsize>
               </font>
              </property>
              <property name="text">
@@ -8194,7 +7975,118 @@
              </property>
             </widget>
            </item>
-           <item row="5" column="0">
+           <item>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Red</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Black</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Odd</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
             <spacer name="verticalSpacer_4">
              <property name="orientation">
               <enum>Qt::Orientation::Vertical</enum>
@@ -8209,7 +8101,223 @@
            </item>
           </layout>
          </item>
+         <item row="6" column="3" rowspan="4">
+          <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,0,0">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetNoConstraint</enum>
+           </property>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Orientation::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Serie 5/8 </string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_15">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Orphelins</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Serie 0/2/3</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_16">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Garamond</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Zero spiel </string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
         </layout>
+       </item>
+       <item row="1" column="0">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -8331,7 +8439,7 @@
     </layout>
    </item>
    <item row="1" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3,1">
      <item>
       <layout class="QVBoxLayout" name="verticalLayout" stretch="2,2">
        <item>
@@ -8391,7 +8499,7 @@
            </item>
            <item>
             <property name="text">
-             <string>----------------------------</string>
+             <string>------------</string>
             </property>
            </item>
            <item>
@@ -8416,7 +8524,7 @@
            </item>
            <item>
             <property name="text">
-             <string>----------------------------</string>
+             <string>------------</string>
             </property>
            </item>
            <item>
@@ -8436,7 +8544,7 @@
            </item>
            <item>
             <property name="text">
-             <string>----------------------------</string>
+             <string>------------</string>
             </property>
            </item>
            <item>
@@ -8457,6 +8565,11 @@
            <item>
             <property name="text">
              <string>Zero spiel</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>------------</string>
             </property>
            </item>
           </widget>
@@ -8624,23 +8737,16 @@
       </layout>
      </item>
      <item>
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
       <widget class="QLabel" name="winlbl">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="minimumSize">
         <size>
-         <width>500</width>
+         <width>0</width>
          <height>0</height>
         </size>
        </property>
@@ -8726,20 +8832,10 @@
        <property name="text">
         <string>~~~ Spin it ~~~</string>
        </property>
+       <property name="alignment">
+        <set>Qt::AlignmentFlag::AlignCenter</set>
+       </property>
       </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_4">
-       <property name="orientation">
-        <enum>Qt::Orientation::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
      </item>
      <item>
       <layout class="QVBoxLayout" name="spinParGrid" stretch="0,0">

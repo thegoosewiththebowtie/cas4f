@@ -16,7 +16,6 @@ Roulette::Roulette(QWidget *parent, QLabel* BLNS)
         QLabel* templbl = this->findChild<QLabel*>(name);
         ui->betRouSlot->addItem(templbl->text());
     }
-    resizeEvent(nullptr);
 }
 void delay3(int i)
 {
@@ -32,25 +31,51 @@ int num2id(int numrun[38], int number){
     }
     return -1;
 }
+
 void Roulette::resizeEvent(QResizeEvent* event){
-    int uh = this->ui->rouGrid->geometry().height()/11;
-    int wh = this->ui->rouGrid->geometry().width()/11;;
-    int ih = this->ui->subGrid->geometry().height()/12;
-    int iw = this->ui->subGrid->geometry().width()/16;
+    int rouGridWidth = this->ui->rouGrid->geometry().width()/11;;
+    int rouGridHeight = this->ui->rouGrid->geometry().height()/11;
+    //int subGridWidth = this->ui->subGrid->geometry().width()/14;
+    //int subGridHeight = this->ui->subGrid->geometry().height()/12;
+
     for (int i = 0; i < 38; ++i){
         QString name = "lbl"+QString::number(i);
         QLabel* templbl = this->findChild<QLabel*>(name);
-        QPushButton* tempbtn = this ->findChild<QPushButton*>("pushButton_"+QString::number(i));
+        //QLabel* templbl2 = this->findChild<QLabel*>(name+"_2");
+
+
         if(templbl!=NULL){
-            templbl->setMinimumHeight(wh/2);templbl->setMaximumHeight(wh/2);
-            templbl->setMaximumWidth(wh); templbl->setMinimumWidth(wh);
-            ui->pbr->setMinimumHeight(wh/2);ui->pbr->setMaximumHeight(wh/2);
-            ui->pbr->setMaximumWidth(wh); ui->pbr->setMinimumWidth(wh);
-            ui->pbr2->setMinimumHeight(wh/2);ui->pbr2->setMaximumHeight(wh/2);
-            ui->pbr2->setMaximumWidth(wh); ui->pbr2->setMinimumWidth(wh);
-            templbl->setStyleSheet("font: "+ QString::number(uh/3) +"pt;");
+
+            templbl->setMinimumHeight(rouGridHeight);templbl->setMaximumHeight(rouGridHeight);
+            templbl->setMaximumWidth(rouGridWidth); templbl->setMinimumWidth(rouGridWidth);
+
+            ui->pbr->setMinimumHeight(rouGridHeight);ui->pbr->setMaximumHeight(rouGridHeight);
+            ui->pbr->setMaximumWidth(rouGridWidth); ui->pbr->setMinimumWidth(rouGridWidth);
+
+            ui->pbr2->setMinimumHeight(rouGridHeight);ui->pbr2->setMaximumHeight(rouGridHeight);
+            ui->pbr2->setMaximumWidth(rouGridWidth); ui->pbr2->setMinimumWidth(rouGridWidth);
+
+            templbl->setStyleSheet("font: "+ QString::number(rouGridWidth/5) +"pt;");
         }
-        if(tempbtn){
+
+    }
+    /*    if(templbl2!=NULL){
+            int d = 1;
+            int p =0;
+            if(i == 0||i==19){
+                d = 3;
+                p =18;
+            }
+
+            templbl2->setMaximumHeight(subGridHeight); templbl2->setMinimumHeight(subGridHeight);
+            templbl2->setMaximumWidth(subGridWidth*d+p); templbl2->setMinimumWidth(subGridWidth*d+p);
+
+            templbl2->setStyleSheet("font: "+ QString::number(subGridHeight*subGridWidth/200) +"pt;");
+        }
+    }
+    for (int i = 0; i < 17; ++i) {
+        QPushButton* tempbtn = this ->findChild<QPushButton*>("pushButton_"+QString::number(i));
+        if(tempbtn!=NULL){
             int d = 1;
             int p = 0;
             if(i>=4 && i<=8){
@@ -59,33 +84,29 @@ void Roulette::resizeEvent(QResizeEvent* event){
             } else if(i>=9&&i<=16){
                 d = 2;
             }
-            tempbtn->setMaximumHeight(iw/2); tempbtn->setMinimumHeight(iw/2);
-            tempbtn->setMaximumWidth(iw*d+p); tempbtn->setMinimumWidth(iw*d+p);
-            tempbtn->setStyleSheet("font: "+ QString::number(ih/3) +"pt;");
-        }
-        QLabel* templbl2 = this->findChild<QLabel*>(name+"_2");
-        if(templbl2!=NULL){
-            int d = 1;
-            int p =0;
-            if(i == 0||i==19){
-                d = 3;
-                p =18;
-            }
-            templbl2->setMaximumHeight(iw/2); templbl2->setMinimumHeight(iw/2);
-            templbl2->setMaximumWidth(iw*d+p); templbl2->setMinimumWidth(iw*d+p);
-            templbl2->setStyleSheet("font: "+ QString::number(ih/3) +"pt;");
+
+            tempbtn->setMaximumHeight(subGridHeight); tempbtn->setMinimumHeight(subGridHeight);
+            tempbtn->setMaximumWidth(subGridWidth*d+p); tempbtn->setMinimumWidth(subGridWidth*d+p);
+
+            tempbtn->setStyleSheet("font: "+ QString::number(rouGridHeight*rouGridWidth/200) +"pt;");
         }
     }
+
     on_betRouSlot_currentIndexChanged(ui->betRouSlot->currentIndex());
-    ui->winlbl->setMinimumWidth(ui->rouGrid->geometry().width()/3);
-    ui->winlbl->setMaximumWidth(ui->rouGrid->geometry().width()/3);
-    ui->winlbl->setStyleSheet("font: "+ QString::number(iw/3) +"pt;");
+
+    int w = ui->rouGrid->geometry().width()/3;
+    ui->winlbl->setMinimumWidth(w); ui->winlbl->setMaximumWidth(w);
+
+    ui->winlbl->setMaximumHeight(w/4); ui->winlbl->setMinimumHeight(w/4);
+
+    ui->winlbl->setStyleSheet("font: "+ QString::number(w/20) +"pt;");
+
     if(!ui->SpinCommand->isEnabled()){
     for (Bet bn : bets) {
         for(int f : bn.nums){
             if(int n; (n = num2id(numrun, f))!= -1){LightUp("lbl"+QString::number(n)+"_2");}
         }
-    }}
+    }}*/
 }
 
 Roulette::~Roulette()
@@ -97,7 +118,6 @@ void Roulette::on_selAnte_valueChanged(int value)
 {
     char str[3];
     sprintf(str, "%03d", value);
-
     ui->disAnte->setText(str);
 }
 
@@ -208,8 +228,13 @@ void Roulette::Win(QFuture<int> spinres, std::vector<Bet> sortedbets){
     ui->betSelRouSlot->setEnabled(true);
     ui->betRouSlot->setEnabled(true);
     ui->selRouSlot->setEnabled(true);
+    for (int var = 0; var <= 16; ++var) {
+        if (var == 1){continue;}
+        QPushButton* tempbtn = this ->findChild<QPushButton*>("pushButton_"+QString::number(var));
+        tempbtn->setChecked(false);
+        tempbtn->setEnabled(true);
+    }
 }
-
 void Roulette::on_SpinCommand_clicked(){
     if(ui->betSelRouSlot->count() <1){
     for (int var = 0; var < 3; ++var) {
@@ -226,6 +251,13 @@ void Roulette::on_SpinCommand_clicked(){
         if (var == 1){continue;}
         QPushButton* tempbtn = this ->findChild<QPushButton*>("pushButton_"+QString::number(var));
         tempbtn->setChecked(false);
+        tempbtn->setEnabled(false);
+
+        for (int var = 0; var < ui->betSelRouSlot->count(); ++var) {
+            if(ui->betSelRouSlot->itemText(var) == tempbtn->text()){
+                tempbtn->setChecked(true);
+            }
+        }
     }
     std::vector<Bet> sortedbets;
     int minnum = 0;
@@ -569,7 +601,8 @@ void Roulette::on_betRouSlot_currentIndexChanged(int index)
             LightUp("lbl"+QString::number(var)+"_2");
         }
         break;
-
+    case 20:
+        break;
     default:
         QString selnumrn = ui->betRouSlot->itemText(index).removeAt(0);
         int selnumrnint = selnumrn.split(" ")[0].toInt();
